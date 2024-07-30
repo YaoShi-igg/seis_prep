@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 try:
     from ._cal_func import _nearest_pow_2, spectrogram
 except:
-    from _cal_func import _nearest_pow_2, spectrogram
+    from seis_prep._cal_func import _nearest_pow_2, spectrogram
 
 def plot_single_ncf(ncf_path, filter_range, stft, fig_dir, fig_type):
     """

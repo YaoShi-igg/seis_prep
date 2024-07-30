@@ -10,7 +10,7 @@ try:
     from ._cal_func import _nearest_pow_2, spectrogram
 except:
     from _time import utc2int
-    from _cal_func import _nearest_pow_2, spectrogram
+    from seis_prep._cal_func import _nearest_pow_2, spectrogram
 
 def plot_3chns_event(filepath_chn1, filepath_chn2, filepath_chn3, filter_range, figure_dir, figure_type):
     """

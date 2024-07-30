@@ -4,12 +4,12 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="sesi_prep",  
+    name="seis_prep",  
     version="1.0",
     author="Shi Yao",
     author_email="yaoshi229@gmail.com",
     description="A package for prepare seismic data",
-    long_description=long_description,
+    long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/YaoShi-igg/seis_prep",
     packages=find_packages(),
