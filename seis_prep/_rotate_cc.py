@@ -2,7 +2,7 @@ import numpy as np
 from obspy import read
 from obspy.geodetics import gps2dist_azimuth
 
-def rotate_ne2rt(filepath_nn, filepath_ee, filepath_ne, filepath_en, filepath_rr, filepath_tt):
+def rotate_cc(filepath_nn, filepath_ee, filepath_ne, filepath_en, filepath_rr, filepath_tt):
     """
     Rotate NN, NE, EN, EE cross-correlations to get RR and TT cross-correlations.
     Refer to Fan-chi Lin et al., 2008, formula (1).
@@ -72,5 +72,5 @@ if __name__ == '__main__':
     filepath_rr = './data_cc/X1.4501_X1.4502_RR_ls.SAC'
     filepath_tt = './data_cc/X1.4501_X1.4502_TT_ls.SAC'
 
-    rotate_ne2rt(filepath_nn=filepath_nn, filepath_ee=filepath_ee, filepath_ne=filepath_ne, filepath_en=filepath_en,
+    rotate_cc(filepath_nn=filepath_nn, filepath_ee=filepath_ee, filepath_ne=filepath_ne, filepath_en=filepath_en,
                  filepath_rr=filepath_rr, filepath_tt=filepath_tt)
